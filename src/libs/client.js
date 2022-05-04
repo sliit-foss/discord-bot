@@ -13,7 +13,6 @@ client.login(process.env.DISCORD_TOKEN);
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}`);
-  console.log(client.user.id);
 });
 
 module.exports = client;
