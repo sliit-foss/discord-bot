@@ -24,7 +24,7 @@ client.on("messageCreate", (message) => {
   } else if (message.content == "akalanka") {
     message.reply("Not Podi eka");
   } else if (message.content == "nisal") {
-    message.reply("Naki rilawa");
+    message.reply("Good Boy");
   } else if (message.content == "sithum") {
     message.reply("Go deyyo");
   } else if (message.content == "chamod") {
