@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const { Client, Intents } = require("discord.js");
+const { Intents } = require("discord.js");
 require("dotenv").config();
 
 const generateImage = require("./generateImage");
@@ -22,9 +22,9 @@ client.on("messageCreate", (message) => {
   } else if (message.content == "miyuru") {
     message.reply("Miyuru playboy");
   } else if (message.content == "akalanka") {
-    message.reply("Podi eka");
+    message.reply("Not Podi eka");
   } else if (message.content == "nisal") {
-    message.reply("Good Boy");
+    message.reply("Naki rilawa");
   } else if (message.content == "sithum") {
     message.reply("Go deyyo");
   } else if (message.content == "chamod") {
