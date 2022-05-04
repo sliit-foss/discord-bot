@@ -15,7 +15,7 @@ client.on("messageCreate", (message) => {
     },
     {
       message: "akalanka",
-      reply: "Not Podi eka",
+      reply: "Podi eka",
       userId: "<@558304590651719681>",
     },
     {
