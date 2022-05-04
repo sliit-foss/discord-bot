@@ -1,5 +1,5 @@
-const Discord = require("discord.js");
-const { Intents } = require("discord.js");
+const Discord = require("discord.js")
+const { Intents } = require("discord.js")
 
 const client = new Discord.Client({
   intents: [
@@ -7,12 +7,12 @@ const client = new Discord.Client({
     Intents.FLAGS.GUILD_MESSAGES,
     Intents.FLAGS.GUILD_MEMBERS,
   ],
-});
+})
 
-client.login(process.env.DISCORD_TOKEN);
+client.login(process.env.DISCORD_TOKEN)
 
 client.on("ready", () => {
-  console.log(`Logged in as ${client.user.tag}`);
-});
+  console.log(`Logged in as ${client.user.tag}`)
+})
 
-module.exports = client;
+module.exports = client
