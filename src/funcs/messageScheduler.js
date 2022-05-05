@@ -10,9 +10,7 @@ client.on("ready", () => {
   exceptionHandler(() => {
     const general = client.channels.cache.get("844968813908983824")
     setTimeout(() => {
-      setInterval(() => {
-        general.send("Good morning!")
-      }, interval)
+      general.send("Good morning!")
     }, timeTillTwelve)
   })
 })
