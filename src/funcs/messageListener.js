@@ -10,7 +10,7 @@ client.on("messageCreate", (message) => {
     },
     {
       message: "miyuru",
-      reply: "Miyuru playboy",
+      reply: "konde tikak oneda?",
       userId: "<@683850851747627051>",
     },
     {
