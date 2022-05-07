@@ -1,9 +1,8 @@
-const exceptionHandler = (fn) => (req, res, next) => {
+const exceptionHandler = (fn) => {
   try {
-    fn(req, res, next)
+    fn()
   } catch (err) {
     console.log(err)
-    if (res) return res.status(500).json({ error: err.message })
   }
 }
 

@@ -1,8 +1,8 @@
-const exceptionHandler = require("../../utils/exceptionHandler")
+const asyncHandler = require("../middleware/async")
 const makeResponse = require("../../utils/response")
 const client = require("../../libs/client")
 
-const getMemberCount = exceptionHandler(async (req, res, next) => {
+const getMemberCount = asyncHandler(async (req, res, next) => {
   const server = await client.guilds.fetch(process.env.SERVER_ID)
   return makeResponse({
     res,
