@@ -4,7 +4,7 @@ const memberRouter = require("./member.routes")
 const router = Router()
 
 router.get("/", (req, res) => {
-  res.status(200).json({ data: "Discord bot up and running" })
+  res.status(200).json({ message: "Discord bot up and running" })
 })
 
 router.use("/member", memberRouter)
