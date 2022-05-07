@@ -1,3 +1,5 @@
+const axios = require("../libs/axios")
+
 setInterval(() => {
-  console.log("Waking up...")
+  axios.get("/").catch((err) => console.log(err))
 }, 3540000)

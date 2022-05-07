@@ -1,10 +1,8 @@
 const client = require("../libs/client")
 const exceptionHandler = require("../utils/exceptionHandler")
 
-const interval = 1000 * 60 * 60 * 24
-
 const timeTillTwelve =
-  (new Date().setHours(0, 0, 0, 0) - new Date().getTime()) * - 1
+  (new Date().setHours(0, 0, 0, 0) - new Date().getTime()) * -1
 
 client.on("ready", () => {
   exceptionHandler(() => {
